@@ -1,0 +1,99 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Hanken Grotesk';
+    /* font-size: ; */
+}
+
+.medium-font {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+    /* body {
+        width: ;
+        height: ;
+        margin: ;
+        padding: ;
+    } */
+}
+
+/* hsla() -- a: opacity (alpha) */
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.background-gradient {
+    background: linear-gradient(90deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.circle-gradient {
+    background: linear-gradient(270deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* Font by using the local font files */
+
+/* 
+@font-face {
+    font-family: 'CustomFontMedium';
+    src: url('../fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFontBold';
+    src: url('../fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFontExtraBold';
+    src: url('../fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFontVariable';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+.medium-font {
+    font-family: 'CustomFontMedium';
+}
+
+.bold {
+    font-family: 'CustomFontBold';
+}
+
+.extra-bold {
+    font-family: 'CustomFontExtraBold';
+}
+
+.variable-font {
+    font-family: 'CustomFontVariable';
+}
+*/
