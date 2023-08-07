@@ -1,15 +1,42 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 body {
+    width: 50%;
+    margin: auto;
     font-family: 'Hanken Grotesk';
-    /* font-size: ; */
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Optional: To make sure the container fills the entire viewport height */
+}
+
+.div-element-white {
+    border-radius: 15px;
+    box-shadow: 10px 20px 20px hsla(234, 85%, 45%, 0.1);
+    margin: 0 !important;
+}
+
+.div-element-blue {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+}
+
+@media (max-width: 575.98px) {
+    body {
+        width: 100%;
+        margin: 0;
+        align-items: flex-start !important;
+    }
+
+    .div-element-white {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .div-element-blue {
+        background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 0 0 15px 15px;
+    }
 }
 
 .medium-font {
@@ -24,14 +51,6 @@ body {
     font-weight: 800;
 }
 
-@media (min-width: 376px) and (max-width: 1440px) {
-    /* body {
-        width: ;
-        height: ;
-        margin: ;
-        padding: ;
-    } */
-}
 
 /* hsla() -- a: opacity (alpha) */
 :root {
@@ -45,18 +64,18 @@ body {
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
-.background-gradient {
-    background: linear-gradient(90deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
 .circle-gradient {
     background: linear-gradient(270deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
-p {
-    font-size: 18px;
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 /* Font by using the local font files */
 
