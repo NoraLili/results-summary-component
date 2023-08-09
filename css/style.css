@@ -1,7 +1,10 @@
+html {
+    font-size: 18px;
+}
+
 body {
     margin: auto;
     font-family: 'Hanken Grotesk';
-    font-size: 18px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -9,42 +12,35 @@ body {
     min-height: 100vh;
 }
 
+p {
+    margin-bottom: 0rem;
+}
+
 .div-element-big {
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 10px 20px 20px hsla(234, 85%, 45%, 0.1);
     margin: 0 !important;
     max-height: 100vh;
-    height: 400px;
-    width: 600px;
+    height: 19rem;
+    width: 27.3rem;
 }
 
 .div-element-blue {
     background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 15px;
-    height: 400px;
+    border-radius: 25px;
+    height: 100%;
     max-height: 100vh;
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .div-element-white {
     max-height: 100vh;
-}
-
-@media (max-width: 575.98px) {
-    body {
-        width: 100%;
-        margin: 0;
-        align-items: flex-start !important;
-    }
-
-    .div-element-big {
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    .div-element-blue {
-        background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-        border-radius: 0 0 15px 15px;
-    }
 }
 
 .medium-font {
@@ -72,52 +68,53 @@ body {
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+.str-your-result {
+    color: hsl(241, 100%, 89%);
+    font-size: 0.9rem;
+    top: 11%;
+}
+
 .circle {
     background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    position: relative;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 65%;
-}
-
-.str-your-result {
-    color: hsl(241, 100%, 89%);
-    font-size: 110%;
+    width: 7.2rem;
+    height: 7.2rem;
+    top: 40%;
 }
 
 .number-your-result {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 325%;
+    font-size: 2.5rem;
+    top: 45%;
 }
 
 .str-of-100 {
-    font-size: 85%;
+    font-size: 0.65rem;
     color: hsl(241, 100%, 89%, 0.5);
-    margin-top: 80px;
+    top: 70%;
 }
 
 .str-great {
-    font-size: 150%;
-    margin: 15px;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    top: 69%;
 }
 
 .str-rating {
-    font-size: 85%;
+    font-size: 0.63rem;
     color: hsl(241, 100%, 89%, 0.9);
-    margin: 0px 25px 25px 25px;
+    top: 83%;
+    width: 100%;
+    padding: 0rem 2.5rem;
+}
+
+.str-summary {
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.reaction-div {
+    background-color: hsl(0, 100%, 67%);
 }
 
 .attribution {
@@ -127,6 +124,44 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 575.98px) {
+    body {
+        align-items: flex-start !important;
+    }
+
+    .div-element-big {
+        border-radius: 0rem;
+        box-shadow: none;
+    }
+
+    .div-element-blue {
+        border-radius: 0px 0px 25px 25px;
+        /* height:95%; */
+    }
+
+    .str-your-result {
+        font-size: 0.9rem;
+    }
+
+    .circle {
+        width: 7.8rem;
+        height: 7.8rem;
+    }
+
+    .number-your-result {
+        font-size: 2.8rem;
+    }
+    
+    .str-of-100 {
+        font-size: 0.85rem;
+        top: 75%;
+    }
+
+    .str-rating {
+        font-size: 0.9rem;
+    }
 }
 
 /* Font by using the local font files */
