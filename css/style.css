@@ -18,7 +18,7 @@ p {
 
 .div-element-big {
     border-radius: 25px;
-    box-shadow: 10px 20px 20px hsla(234, 85%, 45%, 0.1);
+    box-shadow: 10px 20px 20px var(--pale-blue);
     margin: 0 !important;
     max-height: 100vh;
     height: 19rem;
@@ -26,7 +26,7 @@ p {
 }
 
 .div-element-blue {
-    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
     border-radius: 25px;
     height: 100%;
     max-height: 100vh;
@@ -40,7 +40,17 @@ p {
 }
 
 .div-element-white {
+    background: var(--white);
+    border-radius: 0px 25px 25px 0px;
+    height: 100%;
     max-height: 100vh;
+    position: relative;
+}
+
+.position-absolute-white {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .medium-font {
@@ -62,20 +72,48 @@ p {
     --orangey-yellow: hsl(39, 100%, 56%);
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
     --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+.light-red {
+    color: var(--light-red);
+}
+
+.orangey-yellow{
+    color: var(--orangey-yellow);
+}
+
+.green-teal {
+    color: var(--green-teal);
+}
+
+.cobalt-blue {
+    color: var(--cobalt-blue);
+}
+
+.dark-gray-blue {
+    color: var(--dark-gray-blue);
+}
+
+.light-lavender-opacity {
+    color: hsla(241, 100%, 89%, 0.5);
+}
+
 .str-your-result {
-    color: hsl(241, 100%, 89%);
+    color: var(--light-lavender);
     font-size: 0.9rem;
     top: 11%;
 }
 
 .circle {
-    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    background: linear-gradient(180deg, var(--violet-blue), var(--persian-blue));
     border-radius: 50%;
     width: 7.2rem;
     height: 7.2rem;
@@ -89,7 +127,6 @@ p {
 
 .str-of-100 {
     font-size: 0.65rem;
-    color: hsl(241, 100%, 89%, 0.5);
     top: 70%;
 }
 
@@ -100,21 +137,59 @@ p {
 
 .str-rating {
     font-size: 0.63rem;
-    color: hsl(241, 100%, 89%, 0.9);
+    color: hsla(241, 100%, 89%, 0.9);
     top: 83%;
     width: 100%;
     padding: 0rem 2.5rem;
 }
 
 .str-summary {
-    text-align: left;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 11%;
+    transform: translate(0%, -50%);
+    top: 11%;
+    color: var(--dark-gray-blue);
+}
+
+.summary-details {
+    top: 46%;
+    width: 80%;
+    font-size: 0.65rem;
+}
+
+.summary-containers {
+    height: 2.1rem;
+    margin: 0.7rem 0rem;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    border-radius: 10px;
 }
 
 .reaction-div {
-    background-color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.memory-div {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.verbal-div {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.visual-div {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.btn {
+    top: 87%;
+    width: 80%;
+    height: 2.1rem;
+    background-color: hsl(224, 30%, 27%);
+    color: var(--white);
+    font-size: 0.63rem;
+    border-radius: 30px;
 }
 
 .attribution {
@@ -132,13 +207,17 @@ p {
     }
 
     .div-element-big {
-        border-radius: 0rem;
+        border-radius: 0px;
         box-shadow: none;
     }
 
     .div-element-blue {
         border-radius: 0px 0px 25px 25px;
-        /* height:95%; */
+    }
+
+    .div-element-white {
+        border-radius: 0px;
+        height: 130%;
     }
 
     .str-your-result {
@@ -153,7 +232,7 @@ p {
     .number-your-result {
         font-size: 2.8rem;
     }
-    
+
     .str-of-100 {
         font-size: 0.85rem;
         top: 75%;
@@ -161,6 +240,27 @@ p {
 
     .str-rating {
         font-size: 0.9rem;
+    }
+
+    .str-summary {
+        font-size: 1rem;
+    }
+    
+    .summary-details {
+        top: 50%;
+        font-size: 0.9rem;
+    }
+    
+    .summary-containers {
+        height: 3rem;
+        margin: 1rem 0rem;
+    }
+    
+    .btn {
+        top: 92%;
+        height: 3rem;
+        font-size: 1rem;
+        /* border-radius: 50px; */
     }
 }
 
