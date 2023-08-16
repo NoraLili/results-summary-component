@@ -2,7 +2,7 @@ html {
     font-size: 18px;
 }
 
-body {
+main {
     margin: auto;
     font-family: 'Hanken Grotesk';
     text-align: center;
@@ -86,7 +86,7 @@ p {
     color: var(--light-red);
 }
 
-.orangey-yellow{
+.orangey-yellow {
     color: var(--orangey-yellow);
 }
 
@@ -182,14 +182,19 @@ p {
     background-color: hsla(234, 85%, 45%, 0.05);
 }
 
-.btn {
+.button {
     top: 87%;
     width: 80%;
     height: 2.1rem;
-    background-color: hsl(224, 30%, 27%);
+    background-color: var(--dark-gray-blue);
     color: var(--white);
     font-size: 0.63rem;
     border-radius: 30px;
+    border: none;
+}
+
+button:active {
+    background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
 }
 
 .attribution {
@@ -201,8 +206,12 @@ p {
     color: hsl(228, 45%, 44%);
 }
 
+footer {
+    font-family: 'Hanken Grotesk';
+}
+
 @media (max-width: 575.98px) {
-    body {
+    main {
         align-items: flex-start !important;
     }
 
@@ -245,61 +254,20 @@ p {
     .str-summary {
         font-size: 1rem;
     }
-    
+
     .summary-details {
         top: 50%;
         font-size: 0.9rem;
     }
-    
+
     .summary-containers {
         height: 3rem;
         margin: 1rem 0rem;
     }
-    
+
     .btn {
         top: 92%;
         height: 3rem;
         font-size: 1rem;
-        /* border-radius: 50px; */
     }
 }
-
-/* Font by using the local font files */
-
-/* 
-@font-face {
-    font-family: 'CustomFontMedium';
-    src: url('../fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'CustomFontBold';
-    src: url('../fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'CustomFontExtraBold';
-    src: url('../fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'CustomFontVariable';
-    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
-}
-
-.medium-font {
-    font-family: 'CustomFontMedium';
-}
-
-.bold {
-    font-family: 'CustomFontBold';
-}
-
-.extra-bold {
-    font-family: 'CustomFontExtraBold';
-}
-
-.variable-font {
-    font-family: 'CustomFontVariable';
-}
-*/
