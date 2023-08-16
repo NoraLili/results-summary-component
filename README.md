@@ -22,7 +22,7 @@ Throughout this project, I acquired a comprehensive understanding of responsive 
 
 ## Links
 
-- [Live Site]()
-- [Solution]()  
+- [Live Site](https://noralili.github.io/results-summary-component/)
+- [Solution](https://www.frontendmentor.io/solutions/results-summary-component-with-basic-html-css-and-bootstrap-pQZ2_Ez-YN)  
 - LinkedIn - [Nóra Lili Horváth](https://www.linkedin.com/in/nora-lili-horvath/)
 - Frontend Mentor - [@NoraLili](https://www.frontendmentor.io/profile/NoraLili)  
